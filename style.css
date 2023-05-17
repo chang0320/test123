@@ -1,0 +1,44 @@
+.intotext{
+  color: white;
+  font-size: 14pt;
+}
+.member{
+  margin: 10px;
+}
+.serch{
+background-color: black;
+}
+.serchbuttonword{
+  color: white;
+  font-size: 10pt;
+}
+
+.ImageAndInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: black;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  color: white;
+  
+}
+.ImageAndInfo .content {
+
+  font-size: 14pt;
+  line-height: 40px;
+}
+
+.ImageAndInfo .grouplogo {
+
+width: 130%;
+
+}
+
+.infogap{
+  gap: 70px;
+}

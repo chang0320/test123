@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>各組資訊</title>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+       <img src="image/logo_w.png" alt="" width="30px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">苒生</h5>
+          <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">回到首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">關於我們</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">各組資訊</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">展場資訊</a>
+            </li>
+           
+            
+           
+          </ul>
+         
+        </div>
+      </div>
+    </div>
+  </nav>
+     <br>
+     <br>
+     <br>
+     <br>
+  <!-- 橫幅 -->
+  <section>
+    
+    <img src="images/112畢展橫幅.png" alt="" width="100%">
+    
+  </section>
+  
+<!-- 各組資訊 -->
+<section>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-8 serch">
+        <button id="showAllButton" type="button" class="btn btn-close-dark serchbuttonword">顯示全部</button>
+    <button id="gameDesignButton" type="button" class="btn btn-close-dark serchbuttonword">遊戲設計</button>
+    <button id="crossDomainButton"type="button" class="btn btn-close-dark serchbuttonword">跨領域類</button>
+    <button id="animationButton"  type="button" class="btn btn-close-dark serchbuttonword">動畫類</button>
+    <button id="marketingButton"  type="button" class="btn btn-close-dark serchbuttonword">網路行銷</button>
+    <button id="VRButton"  type="button" class="btn btn-close-dark serchbuttonword">VR類</button>
+      </div>
+      <div class="col-4 serch">
+        
+        <div>
+    <input type="text" id="searchInput" placeholder="輸入組別名稱" class="">
+    <button id="searchButton"type="button" class="btn btn-dark">搜尋</button>
+  </div>
+  <div>
+    
+    <!-- 在此新增其他類別按鈕 -->
+  </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      
+            <div class="row row-cols-1 row-cols-md-3 g-4 list">
+              
+              
+            </div>
+              
+
+            </div>
+            
+          </div>
+        </div>
+        
+    </div>
+  </div>
+
+
+
+</section>
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+ AOS.init();
+ </script>
+ 
+ <!-- 所有組別的圖片 -->
+
+ <script>
+
+var groupdata = [
+{
+    "groupname": "忠始如一－邱忠均虛擬美術館",
+    "image": "images/groupimages/忠始如一－邱忠均虛擬美術館.png",
+    "type" : "VR類",
+    "link" : "group1.html"
+},
+
+{
+    "groupname": "謎失の夢境",
+    "image": "images/groupimages/謎失の夢境.png",
+    "type" : "遊戲設計",
+    "link" : "group2.html"
+},
+
+{
+    "groupname": "疫境重生",
+    "image": "images/groupimages/疫境重生.png",
+    "type" : "動畫類",
+    "link" : "group3.html"
+},
+
+{
+    "groupname":"-歸ME",
+    "image": "images/groupimages/歸me.png",
+    "type" : "網路行銷",
+    "link" : "group4.html"
+},
+
+{
+    "groupname": "戀戀甜心學院",
+    "image": "images/groupimages/戀戀甜心學院.png",
+    "type" : "遊戲設計",
+    "link" : "group5.html"
+},
+
+{
+    "groupname": "寵樂緣",
+    "image": "images/groupimages/寵樂緣.png",
+    "type" : "網路行銷",
+    "link" : "group6.html"
+},
+
+{
+    "groupname": "億地",
+    "image": "images/groupimages/億地.png",
+    "type" : "遊戲設計",
+    "link" : "group7.html"
+},
+
+{
+    "groupname": "智礙有限，織愛無限",
+    "image": "images/groupimages/智礙有限，織愛無限.png",
+    "type" : "網路行銷",
+    "link" : "group8.html"
+},
+
+{
+    "groupname": "深淵輓歌",
+    "image": "images/groupimages/深淵輓歌.png",
+    "type" : "遊戲設計",
+    "link" : "group9.html"
+},
+
+{
+    "groupname": "【SDGs4】「Oh!Show!繪課室」文藻小學堂 － CODE CODE CODE!",
+    "image": "images/groupimages/【SDGs4】「Oh!Show!繪課室」文藻小學堂 － CODE CODE CODE!.png",
+    "type" : "跨領域類",
+    "link" : "group10.html"
+},
+
+{
+    "groupname": "【SDGs4】文藻USR-hub看見需要．千手扶學–用愛朗讀、用藝術陪伴",
+    "image": "images/groupimages/【SDGs4】文藻USR-hub看見需要．千手扶學–用愛朗讀、用藝術陪伴.png",
+    "type" : "跨領域類",
+    "link" : "group11.html"
+},
+
+{
+    "groupname": "KAKO Latte",
+    "image": "images/groupimages/KAKO Latte.png",
+    "type" : "網路行銷",
+    "link" : "group12.html"
+},
+{
+  "groupname": "你給我電電",
+    "image": "images/groupimages/你給我電電.png",
+    "type" : "動畫類",
+    "link" : "group13.html"
+},
+{
+  "groupname": "水黃皮彩繪",
+    "image": "images/groupimages/水黃皮彩繪.png",
+    "type" : "遊戲設計",
+    "link" : "group14.html"
+},
+
+
+
+
+];
+var str = '';
+var i
+        for (i = 0; i < groupdata.length; i++) {
+            var div = document.createElement('div'); 
+            var a = document.createElement('a');
+            var img = document.createElement('img');
+            var h5 = document.createElement('h5');
+            var p = document.createElement('p');
+            div.className= 'col-4'
+            a.href = groupdata[i].link;
+            img.src = groupdata[i].image;
+            img.className = 'card-img-top';
+            h5.textContent = groupdata[i].groupname;
+            h5.className = 'card-title';
+            p.textContent = groupdata[i].type;
+            p.className = 'card-text';
+            div.appendChild(a);
+            a.appendChild(img);
+            div.appendChild(h5);
+            div.appendChild(p);
+
+            document.querySelector('.list').appendChild(div);
+            
+        }
+
+// 函式用來顯示特定類別的組別
+function displayTypeData(type) {
+  var groupList = document.querySelectorAll('.list > div');
+  for (var i = 0; i < groupList.length; i++) {
+    var groupType = groupList[i].querySelector('p').textContent;
+    if (type === '' || groupType === type) {
+      groupList[i].style.display = 'block';
+    } else {
+      groupList[i].style.display = 'none';
+    }
+  }
+}
+
+// 預設顯示所有組別
+displayTypeData('');
+
+// 搜尋按鈕點擊事件處理器
+document.getElementById('searchButton').addEventListener('click', function() {
+  var searchTerm = document.getElementById('searchInput').value;
+  displayTypeData('');
+  if (searchTerm !== '') {
+    var groupList = document.querySelectorAll('.list > div');
+    for (var i = 0; i < groupList.length; i++) {
+      var groupName = groupList[i].querySelector('h5').textContent;
+      if (groupName.toLowerCase().includes(searchTerm.toLowerCase())) {
+        groupList[i].style.display = 'block';
+      } else {
+        groupList[i].style.display = 'none';
+      }
+    }
+  }
+});
+
+function showAllGroups() {
+  displayTypeData('');
+  }
+
+// 類別按鈕點擊事件處理器
+document.getElementById('gameDesignButton').addEventListener('click', function() {
+  displayTypeData('遊戲設計');
+});
+
+document.getElementById('crossDomainButton').addEventListener('click', function() {
+  displayTypeData('跨領域類');
+});
+
+document.getElementById('animationButton').addEventListener('click', function() {
+  displayTypeData('動畫類');
+});
+
+document.getElementById('marketingButton').addEventListener('click', function() {
+  displayTypeData('網路行銷');
+});
+
+document.getElementById('VRButton').addEventListener('click', function() {
+  displayTypeData('VR類');
+});
+
+document.getElementById('showAllButton').addEventListener('click', showAllGroups);
+
+ </script>
+
+
+
+
+</html>
